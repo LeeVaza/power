@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TROP</title>
+    <link rel="stylesheet" type="text/css" href="любвеобильная.css" </head>
+    <link rel="icon" href="ЛЕЙБЛ-ФОРМ.png">
+</head>
+<body class="newmenu">
+    <main>
+        <div class="tickers">
+            <div class="ticker">
+              <h3 class="ticker__head">Выберите гида</h3>
+              <h3 class="ticker__head">Выберите гида</h3>
+              <h3 class="ticker__head">Выберите гида</h3>
+              <h3 class="ticker__head">Выберите гида</h3>
+              <h3 class="ticker__head">Выберите гида</h3>
+              <h3 class="ticker__head">Выберите гида</h3>
+              <h3 class="ticker__head">Выберите гида</h3>
+              <h3 class="ticker__head">Выберите гида</h3>
+              <h3 class="ticker__head">Выберите гида</h3>
+            </div>
+          </div>
+        <section class="guide-bg">
+            <div class="guides container">
+                <img src="Верданди.png" alt="" class="Ver">
+                <img src="Урд.png" alt="" class="Yrd">
+                <img src="Скульд.png" alt="" class="Sky">
+            </div>
+            <div class="guide-btn">
+                <div class="guide">
+                    <button class="btn-1">
+                        <img src="луна.png" alt="Персонаж 1">
+                    </button>
+                </div>
+                <div class="guide">
+                    <button class="btn-2">
+                        <img src="солнце.png" alt="Персонаж 2">
+                    </button>
+                </div>
+                <div class="guide">
+                    <button class="btn-3">
+                        <img src="звезда.png" alt="Персонаж 3">
+                    </button>
+                </div>
+            </div>
+            <a href="обширные_познания.html"><button class="submit">Подтвердить</button></a>
+        </section>
+    </main>
+<script src="./регистрация1.js"></script>
+<script src="./script1.js"></script>
+<script>
+    document.querySelector('.btn-1').
+        addEventListener('click', function() {
+            const Ver = document.querySelector('.Ver');
+            const Yrd = document.querySelector('.Yrd');
+            const Sky = document.querySelector('.Sky');
+            Ver.classList.toggle('select');
+            Yrd.classList.remove('select');
+            Sky.classList.remove('select');
+        });
+        document.querySelector('.btn-2').
+        addEventListener('click', function() {
+            const Ver = document.querySelector('.Ver');
+            const Yrd = document.querySelector('.Yrd');
+            const Sky = document.querySelector('.Sky');
+            Ver.classList.remove('select');
+            Yrd.classList.toggle('select');
+            Sky.classList.remove('select');
+        });
+        document.querySelector('.btn-3').
+        addEventListener('click', function() {
+            const Ver = document.querySelector('.Ver');
+            const Yrd = document.querySelector('.Yrd');
+            const Sky = document.querySelector('.Sky');
+            Ver.classList.remove('select');
+            Yrd.classList.remove('select');
+            Sky.classList.toggle('select');
+        });
+</script>
+</body>
+</html>
